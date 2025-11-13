@@ -90,13 +90,13 @@ export default function WeatherApp() {
   };
 
   const fetchWeather = async (lat, lon, displayName) => {
-    setLoading(true);
-    setError("");
-    try {
-      const url = buildForecastUrl(lat, lon);
-      const res = await fetch(url);
-      if (!res.ok) throw new Error("Weather API error");
-      const data = await res.json();
+    // setLoading(true);
+    // setError("");
+    // try {
+    //   const url = buildForecastUrl(lat, lon);
+    //   const res = await fetch(url);
+    //   if (!res.ok) throw new Error("Weather API error");
+    //   const data = await res.json(); err
 
       // current
       const cw = data.current_weather || null;
