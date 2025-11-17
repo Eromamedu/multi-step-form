@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Promo from "./components/Promos.jsx/Promo.jsx";
 // import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
-import WeatherApp from "./components/Weatherapp/weather";
+import Todoapp from "./components/todoapp/Todoapp";
 // import Sellon from "./components/Sellon/Sellon.jsx";
 // import Opay from "./components/opay/opay.jsx";
 // import Cart from "./components/cart/cart.jsx";
@@ -36,7 +36,7 @@ function App() {
   return (
     // <Navbar />
       <div className="jumia-app"> 
-       <WeatherApp/>
+       <Todoapp/>
       </div>
   );
 }
