@@ -1,0 +1,316 @@
+.container {
+  width: 900px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-top:80px;
+  /* margin: auto; */
+  gap: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Ubuntu", sans-serif;
+} 
+.plan-options{
+  display:grid;
+  gap:1.2rem;
+  margin-top:1.5rem;
+}
+.plan-card{display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:1.2rem;
+  border:1px solid var(--light-gray);
+  border-radius:0.7rem;
+  cursor:pointer;
+  transition:0.2s;
+  background:#fff;
+}
+.plan-card.active{
+  border-color:var(--purplish-blue);
+  background:var(--very-light-gray);
+}
+.plan-card img{
+  width:40px;
+  height:40px;
+}
+.plan-card .info h4{
+  font-size:1rem;
+  color:var(--marine-blue);
+}
+.plan-card .info p{
+  font-size:0.85rem;
+  color:var(--cool-gray);
+}
+.billing-toggle{
+  margin-top:1.5rem;
+  padding:1rem;
+  background:var(--very-light-gray);
+  border-radius:0.7rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:1rem;
+  font-size:0.9rem;
+}
+.billing-toggle span{
+  color:var(--cool-gray);
+}
+.billing-toggle .active{
+  color:var(--marine-blue);
+  font-weight:600;
+}
+
+/* Step 3 – Add-ons */
+.addons-list{
+  display:grid;gap:1rem;
+  margin-top:1.5rem;
+}
+.addon-item{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:1rem;
+  border:1px solid var(--light-gray);
+  border-radius:0.6rem;
+  cursor:pointer;
+  transition:0.2s;
+  background:#fff;
+}
+.addon-item.active{
+  border-color:var(--purplish-blue);
+  background:var(--very-light-gray);
+}
+.addon-item label{
+  flex:1;
+  cursor:pointer;
+}
+.addon-item h4{
+  font-size:0.95rem;
+  color:var(--marine-blue);
+}
+.addon-item p{
+  font-size:0.8rem;
+  color:var(--cool-gray);
+}
+.addon-price{
+  color:var(--purplish-blue);
+  font-size:0.85rem;
+  font-weight:600;
+}
+
+
+/* Step 4 – Summary */
+.summary-box{
+  background:var(--very-light-gray);
+  padding:1.5rem;border-radius:0.8rem;margin-top:1.5rem;
+}
+.summary-item{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:1rem;
+}
+.summary-item.plan{
+  border-bottom:1px solid var(--light-gray);
+  padding-bottom:1rem;margin-bottom:1rem;
+}
+.summary-item h4{
+  color:var(--marine-blue);
+  font-size:1rem;
+}
+.summary-item .change{color:var(--cool-gray);
+  text-decoration:underline;
+  cursor:pointer;
+  font-size:0.85rem;
+}
+.summary-price{
+  font-weight:700;
+  color:var(--marine-blue);
+}
+.total{
+  display:flex;
+  justify-content:space-between;
+  margin-top:1rem;
+  font-size:1rem;
+  font-weight:700;
+  color:var(--purplish-blue);
+}
+
+
+/* Step 5 – Thank You */
+.thank-you{
+  text-align:center;
+  margin-top:2rem;
+}
+.thank-you img{
+  width:70px;
+  margin-bottom:1rem;
+}
+.thank-you h2{
+  color:var(--marine-blue);
+  margin-bottom:0.5rem;
+}
+.thank-you p{
+  color:var(--cool-gray);
+  font-size:0.9rem;
+  line-height:1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+  width: 900px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+  gap: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Ubuntu", sans-serif;
+} */
+
+/* .sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #473dff, #6259ff);
+  border-radius: 10px;
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; */
+    /* background-image: url("/interactive-comment/intercom-app/src/components/assets/images/bg-sidebar-desktop.svg"); */
+  /* background-image: url("/assets/images/bg-sidebar-desktop.svg"); */
+  /* background-size: cover; */
+/* } */
+/* 
+.step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.8;
+}
+.step.active {
+  opacity: 1;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.info span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.info p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-area {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.form-area h1 {
+  font-size: 28px;
+  color: #03295a;
+}
+
+.subtitle {
+  color: #9699ab;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #022959;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #d6d9e6;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #473dff;
+}
+
+.next {
+  padding: 12px 20px;
+  background: #03295a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+}
+
+.next:hover {
+  background: #174a89;
+} */
+
+/* Responsive */
+/* @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  } */
+
+  /* .sidebar {
+    flex-direction: row;
+    height: 150px; */
+      /* background-image: url("/interactive-comment/intercom-app/src/components/assets/images/bg-sidebar-desktop.svg"); */
+
+    /* background-image: url("/assets/images/bg-sidebar-mobile.svg"); */
+  /* } */
+
+  /* .form-area {
+    padding: 20px;
+  }
+} */

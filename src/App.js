@@ -2,19 +2,19 @@
 // /* App.jsx */
 // import React from 'react';
 // import './App.css';
-import React, { useState } from "react";
+import React from "react";
 // import Navbar from "./components/header/headers.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import CommentSection from "./components/Intercomapps/Intercomapp";
 // import Home from "./components/Home/Home.jsx";
 // import Promo from "./components/Promos.jsx/Promo.jsx";
 // import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
-import Todoapp from "./components/todoapp/Todoapp";
+// import IntercomApp from "./components/intercomapps/intercomapp";
 // import Sellon from "./components/Sellon/Sellon.jsx";
 // import Opay from "./components/opay/opay.jsx";
 // import Cart from "./components/cart/cart.jsx";
 // import Ordered from "./components/Ordered/Ordered.jsx";
-function App() {
   // const [cartCount, setCartCount] = useState(0);
   // function addToCart() {
   //   setCartCount(cartCount + 1);
@@ -33,15 +33,14 @@ function App() {
 //     }
 // };
 
+export default function App() {
   return (
-    // <Navbar />
-      <div className="jumia-app"> 
-       <Todoapp/>
-      </div>
+    <div className="app-container">
+      <CommentSection />
+    </div>
   );
 }
 
-export default App;
 
 // function App() {
 //   return (
