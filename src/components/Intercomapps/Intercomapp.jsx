@@ -12,7 +12,7 @@ export default function MultiStepForm() {
     billing: "monthly",
     addons: [],
   });
-
+// PLANS
   const plans = {
     arcade: { monthly: 9, yearly: 90 },
     advanced: { monthly: 12, yearly: 120 },
