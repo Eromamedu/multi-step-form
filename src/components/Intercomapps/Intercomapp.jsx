@@ -18,7 +18,7 @@ export default function MultiStepForm() {
     advanced: { monthly: 12, yearly: 120 },
     pro: { monthly: 15, yearly: 150 },
   };
-
+// addon
   const addonsList = [
     { id: "online", title: "Online service", price: { monthly: 1, yearly: 10 } },
     { id: "storage", title: "Larger storage", price: { monthly: 2, yearly: 20 } },
